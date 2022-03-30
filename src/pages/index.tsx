@@ -64,7 +64,7 @@ export default function Home() {
         <Carousel />
         <Block
           title="What’s in the book"
-          subtitle="The book is centered around a series of 60 tactics you can employ to better equip yourself for hacking your own bureacracy. Here are a few of our favorite:"
+          subtitle="The book is centered around a series of 56 tactics you can employ to better equip yourself for hacking your own bureacracy. Here are a few of our favorite:"
         >
           <div className="topics">
             <div className="topic topic--yellow">
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="topic-image">
                   <img src="/img/icon-silos.svg" role="presentation" alt="" />
                 </div>
-                <div className="topic-content">The Space Between the Silos</div>
+                <div className="topic-content">Look Between the Silos</div>
               </div>
               <div className="topic topic--yellow">
                 <div className="topic-image">
