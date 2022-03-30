@@ -160,7 +160,39 @@ export default function Home() {
             </div>
           </div>
         </Block>
-        <Block title="The Authors" theme="block--light-yellow">
+        <Block title="Blog">
+          <div className="blog">
+            <a href="#empty" className="blog-featured">
+              <div className="blog-featured-image">
+                <img src="/img/blog-image.svg" alt="Blog Title" />
+              </div>
+              <div className="blog-featured-content">
+                <h3 className="blog-featured-title">Featured Blog Title</h3>
+                <div className="blog-featured-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  fringilla vestibulum sodales. Pellentesque lobortis diam elit,
+                  vitae finibus dui finibus a. Praesent bibendum libero at nisl
+                  aliquam, eget blandit nunc consequat.{` `}
+                </div>
+              </div>
+            </a>
+            <div className="blog-posts">
+              <a href="#empty" className="blog-post">
+                <span>Blog Title</span>
+                <img src="/img/blog-image.svg" alt="Blog Title" />
+              </a>
+              <a href="#empty" className="blog-post">
+                <span>Blog Title</span>
+                <img src="/img/blog-image.svg" alt="Blog Title" />
+              </a>
+              <a href="#empty" className="blog-post">
+                <span>Blog Title</span>
+                <img src="/img/blog-image.svg" alt="Blog Title" />
+              </a>
+            </div>
+          </div>
+        </Block>
+		<Block title="The Authors" theme="block--light-yellow">
           <div className="author">
             <div className="author-image">
               <img src="/img/author-marina.svg" role="presentation" alt="" />
@@ -252,38 +284,6 @@ export default function Home() {
                   Read more about Nick
                 </a>
               </div>
-            </div>
-          </div>
-        </Block>
-        <Block title="Blog">
-          <div className="blog">
-            <a href="#empty" className="blog-featured">
-              <div className="blog-featured-image">
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </div>
-              <div className="blog-featured-content">
-                <h3 className="blog-featured-title">Featured Blog Title</h3>
-                <div className="blog-featured-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  fringilla vestibulum sodales. Pellentesque lobortis diam elit,
-                  vitae finibus dui finibus a. Praesent bibendum libero at nisl
-                  aliquam, eget blandit nunc consequat.{` `}
-                </div>
-              </div>
-            </a>
-            <div className="blog-posts">
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
             </div>
           </div>
         </Block>
