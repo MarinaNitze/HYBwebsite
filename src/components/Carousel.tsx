@@ -28,12 +28,21 @@ export default function Carousel() {
       <div className="carousel-cell">
         <div className="quote">
           <div className="quote-wrapper">
-            <div className="quote-name">Very Important Name</div>
-            <div className="quote-position">Very Important Position</div>
+            <div className="quote-name">Carl Malamud</div>
+            <div className="quote-position">Public Resource</div>
             <div className="quote-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo,
-              nisi, vitae vulputate libero. Scelerisque posuere in erat neque ac
-              luctus congue tellus eget.
+              The U.S. federal government is the largest and most unwieldy living organism in the world. In “Hack Your Bureaucracy,” Marina Nitze and Nick Sinai use their own experience as agents of change in the civil service to give a master class on how to get things done. This book is essential reading for anybody working in any large institution, not just government.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-cell">
+        <div className="quote">
+          <div className="quote-wrapper">
+            <div className="quote-name">Jack Shanahan</div>
+            <div className="quote-position">First Director of the Algorithmic Warfare Cross-Functional Team, U.S. Air Force</div>
+            <div className="quote-content">
+              A masterful guide to hacking the bureaucracy. Nick and Marina don't just talk the talk. When I was standing up the DoD Joint AI Center (JAIC), the organization took on a completely new life after Nick jumped in to help us. And as a relatively recent military retiree, I can attest that the VA online experience is 50x better today than it was just a few years ago. If you aren't energized by this book, you don't have a pulse!
             </div>
           </div>
         </div>
