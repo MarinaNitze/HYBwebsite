@@ -160,7 +160,7 @@ export default function Home() {
             </div>
           </div>
         </Block>
-        <Block title="Blog">
+        <Block title="Blog" theme="block--light-yellow">
           <div className="blog">
             <a href="#empty" className="blog-featured">
               <div className="blog-featured-image">
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
           </div>
         </Block>
-		<Block title="The Authors" theme="block--light-yellow">
+		<Block title="The Authors">
           <div className="author">
             <div className="author-image">
               <img src="/img/author-marina.svg" role="presentation" alt="" />
