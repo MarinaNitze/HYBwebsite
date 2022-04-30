@@ -43,11 +43,10 @@ export default function Home() {
         <div className="intro">
           <div className="intro-wrapper">
             <div className="intro-content">
-              The never-before-told story of how we{` `}
-              <strong>saved billions of dollars and thousands</strong> of lives
-              in the largest, most notorious bureaucracy in the world—the U.S.
-              Federal Government—and how our tried and true tactics can help you
-              unlock outsized success in your organization.
+Whether you just started your first entry-level job, run the entire company, or just feel trapped by your condo association bylaws, it’s time to learn how to get big things done. From local government to the White House, Harvard to the world of venture capital, Marina Nitze and Nick Sinai have taken on some of the world’s most challenging bureaucracies—and won. 
+
+Now, they bring their years of experience to you, teaching you strategies anyone can use to improve your organization through their own stories and those of fellow bureaucracy hackers. Regardless of your industry, role, or team, Hack Your Bureaucracy shows how to get started, take initiative on your own, and transform your ideas into impact.
+              
             </div>
             <div className="intro-date">AVAILABLE SEPTEMBER 13, 2022!</div>
             <div className="intro-preorder">Preorder today from</div>
@@ -271,19 +270,31 @@ export default function Home() {
             <div className="author-content">
               <h3 className="author-name">Nick Sinai</h3>
               <div className="author-bio">
-                Nick Sinai is a venture capitalist, former Harvard faculty, and
-                a former senior White House official in the Obama
-                Administration. Nick writes about technology and innovation in
-                government—including co-authoring a Harvard Business School case
-                about the U.S. Digital Service and a Belfer Center paper on
-                Medicare reform innovation. He’s been quoted in the Economist
-                and the WSJ, and testified in front of Congress.
+                Nick Sinai is a venture capitalist, adjunct Harvard faculty, and a former senior White House official in the Obama Administration. Nick writes about technology and innovation in government—including co-authoring a Harvard Business School case about the U.S. Digital Service. He’s been quoted in the Economist and the WSJ, and testified in front of Congress. Recently, Nick co-founded the U.S. Digital Corps, a new two-year federal fellowship for early-career technologists, launched in the summer of 2021.
               </div>
               <div className="author-read">
                 <a href="https://en.wikipedia.org/wiki/Nick_Sinai">
                   Read more about Nick
                 </a>
               </div>
+              <h4 className="author-other">Other work:</h4>
+              <ul>
+                <li>
+                  <a href="https://nicksinai.medium.com/">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.insightpartners.com/team/nick-sinai">
+                    Insight Partners
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.hks.harvard.edu/faculty/nick-sinai">
+                    Harvard Kennedy School
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </Block>
