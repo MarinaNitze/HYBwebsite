@@ -45,7 +45,7 @@ export default function Home() {
             <div className="intro-content">
 Whether you just started your first entry-level job, run the entire company, or just feel trapped by your condo association bylaws, it’s time to learn how to get big things done. From local government to the White House, Harvard to the world of venture capital, Marina Nitze and Nick Sinai have taken on some of the world’s most challenging bureaucracies—and won. 
 
-Now, they bring their years of experience to you, teaching you strategies anyone can use to improve your organization through their own stories and those of fellow bureaucracy hackers. Regardless of your industry, role, or team, Hack Your Bureaucracy shows how to get started, take initiative on your own, and transform your ideas into impact.
+<p>Now, they bring their years of experience to you, teaching you strategies anyone can use to improve your organization through their own stories and those of fellow bureaucracy hackers. Regardless of your industry, role, or team, Hack Your Bureaucracy shows how to get started, take initiative on your own, and transform your ideas into impact.</p>
               
             </div>
             <div className="intro-date">AVAILABLE SEPTEMBER 13, 2022!</div>
