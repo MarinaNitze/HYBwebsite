@@ -5,6 +5,20 @@ import Block from '@/components/Block';
 export default function Home() {
   const [isActive, setIsActive] = useState(false);
 
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `,
+  );
+
   return (
     <main>
       <div className="wrapper">
