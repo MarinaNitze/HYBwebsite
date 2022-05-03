@@ -23,6 +23,29 @@ export default function Home() {
 
   return (
     <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{site.siteMetadata.title}</title>
+      <meta name="description" content={site.siteMetadata.description} />
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "mainEntity": {
+            "@type": "Book",
+            "author": "http://www.example.com/author.html",
+            "bookFormat": "http://schema.org/EBook",
+            "datePublished": "2022-09-13",
+            "image": "https://www.hackyourbureaucracy.com/img/header.svg",
+            "inLanguage": "English",
+            "isbn": "9780306827754",
+            "name": "Hack Your Bureaucracy",
+            "numberOfPages": "1234",
+            "publisher": "Hachette Books"
+          }
+        }`}
+      </script>
+    </Helmet>
       <div className="wrapper">
         <header className="hero">
           <div className="hero-inner">
