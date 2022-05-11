@@ -31,7 +31,29 @@ export default function Carousel() {
             <div className="quote-name">Carl Malamud</div>
             <div className="quote-position">Public Resource</div>
             <div className="quote-content">
-              "The U.S. federal government is the largest and most unwieldy living organism in the world. In “Hack Your Bureaucracy,” Marina Nitze and Nick Sinai use their own experience as agents of change in the civil service to give a master class on how to get things done. This book is essential reading for anybody working in any large institution, not just government."
+              "The U.S. federal government is the largest and most unwieldy living organism in the world. In <em>Hack Your Bureaucracy</em>, Marina Nitze and Nick Sinai use their own experience as agents of change in the civil service to give a master class on how to get things done. This book is essential reading for anybody working in any large institution, not just government."
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-cell">
+        <div className="quote">
+          <div className="quote-wrapper">
+            <div className="quote-name">Todd Park</div>
+            <div className="quote-position">cofounder of Devoted Health, Athenahealth, and Castlight Health and former U.S. CTO</div>
+            <div className="quote-content">
+              "Nick and Marina are incredibly gifted change agents, and in <em>Hack Your Bureaucracy</em>, they provide hard-won lessons and wisdom that will be invaluable to everyone from entrepreneurs trying to build great companies to innovators working to change institutions of all kinds from the inside out.  Like working with Nick and Marina, the book is energizing, inspiring, and an absolute blast -- a how-to manual for driving change unlike any other."
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-cell">
+        <div className="quote">
+          <div className="quote-wrapper">
+            <div className="quote-name">Anne-Marie Slaughter</div>
+            <div className="quote-position">CEO, New America</div>
+            <div className="quote-content">
+              "<em>Hack Your Bureaucracy</em> should be on the desk of every government official in the land -- federal, state, and local. It offers powerful tools to strengthen and expand our democracy by making it work for everyone."
             </div>
           </div>
         </div>
