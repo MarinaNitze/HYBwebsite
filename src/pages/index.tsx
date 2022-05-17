@@ -27,6 +27,15 @@ export default function Home() {
       <meta charSet="utf-8" />
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRF971PJMB"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+
+	    gtag('config', 'G-LRF971PJMB');
+	  </script>
       <script type="application/ld+json">
         {`{
           "@context": "https://schema.org",
