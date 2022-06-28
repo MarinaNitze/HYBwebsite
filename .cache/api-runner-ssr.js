@@ -6,6 +6,10 @@ var plugins = [{
       name: 'gatsby-plugin-react-helmet',
       plugin: require('/Users/marinanitze/Dropbox/programming/hybwebsite/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      name: 'gatsby-plugin-google-gtag',
+      plugin: require('/Users/marinanitze/Dropbox/programming/hybwebsite/node_modules/gatsby-plugin-google-gtag/gatsby-ssr'),
+      options: {"plugins":[],"trackingIds":["G-LRF971PJMB"],"pluginConfig":{"head":true,"exclude":["/preview/**","/do-not-track/me/too/"]}},
     }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
