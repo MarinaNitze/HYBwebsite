@@ -31,6 +31,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
 	`gatsby-plugin-netlify`,
 	{
+	        resolve: 'gatsby-plugin-mailchimp',
+	        options: {
+	            endpoint: 'https://hackyourbureaucracy.us14.list-manage.com/subscribe/post?u=88e2ac5d9e92a3764f0b4aedd&amp;id=d99454c26c', // string; add your MC list endpoint here; see instructions below
+	            timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+	        },
+	},
+	{
 	      resolve: `gatsby-plugin-google-gtag`,
 	      options: {
 	        // You can add multiple tracking ids and a pageview event will be fired for all of them.

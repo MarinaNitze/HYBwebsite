@@ -59,7 +59,15 @@ export default function Home() {
                   <a href="https://www.amazon.com/Hack-Your-Bureaucracy-Things-Matter/dp/0306827751/ref=sr_1_2?crid=CX4U3NGDPLJF&keywords=hack+your+bureaucracy&qid=1643597507&sprefix=hack+your+buraucracy%2Caps%2C65&sr=8-2">
                     Amazon
                   </a>
-                  {` `}
+                  {`, `}
+                  <a href="https://www.indiebound.org/book/9780306827754">
+                    Indiebound
+                  </a>
+                  {`, `}
+                  <a href="https://bookshop.org/books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team/9780306827754">
+                    Bookshop.org
+                  </a>
+                  {`, `}
                   or{` `}
                   <a href="https://www.barnesandnoble.com/w/hack-your-bureaucracy-marina-nitze/1140835387">
                     Barnes &amp; Noble
@@ -92,6 +100,12 @@ Whether you just started your first entry-level job, run the entire company, or 
             <div className="intro-links">
               <a href="https://www.amazon.com/Hack-Your-Bureaucracy-Things-Matter/dp/0306827751/ref=sr_1_2?crid=CX4U3NGDPLJF&keywords=hack+your+bureaucracy&qid=1643597507&sprefix=hack+your+buraucracy%2Caps%2C65&sr=8-2">
                 <img src="/img/amazon.png" alt="Amazon" />
+              </a>
+              <a href="https://bookshop.org/books/hack-your-bureaucracy-get-things-done-no-matter-what-your-role-on-any-team/9780306827754">
+                <img src="/img/bookshop.png" alt="Bookshop.org" />
+              </a>
+              <a href="https://www.indiebound.org/book/9780306827754">
+                <img src="/img/indiebound.png" alt="Indiebound" />
               </a>
               <a href="https://www.barnesandnoble.com/w/hack-your-bureaucracy-marina-nitze/1140835387">
                 <img src="/img/barnes.png" alt="Barnes & Noble" />

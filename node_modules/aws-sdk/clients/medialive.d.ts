@@ -649,6 +649,7 @@ Leave set to "normal" when input does not contain pre-mixed audio + AD.
   }
   export interface AcceptInputDeviceTransferResponse {
   }
+  export type AccessibilityType = "DOES_NOT_IMPLEMENT_ACCESSIBILITY_FEATURES"|"IMPLEMENTS_ACCESSIBILITY_FEATURES"|string;
   export type AfdSignaling = "AUTO"|"FIXED"|"NONE"|string;
   export interface AncillarySourceSettings {
     /**
@@ -758,7 +759,7 @@ Note that this field and audioType are both ignored if inputType is broadcasterM
     /**
      * The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription.  Description names should be unique within this Live Event.
      */
-    Name: __string;
+    Name: __stringMax255;
     /**
      * Settings that control how input audio channels are remixed into the output audio channels.
      */
@@ -1190,6 +1191,10 @@ Alternate rendition that the client will not try to play back by default. Repres
   }
   export interface CaptionDescription {
     /**
+     * Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.
+     */
+    Accessibility?: AccessibilityType;
+    /**
      * Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.
      */
     CaptionSelectorName: __string;
@@ -1338,6 +1343,10 @@ one destination per packager.
      */
     LogLevel?: LogLevel;
     /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
+    /**
      * The name of the channel. (user-mutable)
      */
     Name?: __string;
@@ -1412,6 +1421,10 @@ one destination per packager.
      */
     LogLevel?: LogLevel;
     /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
+    /**
      * The name of the channel. (user-mutable)
      */
     Name?: __string;
@@ -1466,6 +1479,10 @@ one destination per packager.
      * The log level to write to CloudWatch Logs.
      */
     LogLevel?: LogLevel;
+    /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceCreateSettings;
     /**
      * Name of channel.
      */
@@ -1687,6 +1704,10 @@ one destination per packager.
      */
     LogLevel?: LogLevel;
     /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
+    /**
      * The name of the channel. (user-mutable)
      */
     Name?: __string;
@@ -1864,6 +1885,10 @@ one destination per packager.
      */
     Region?: __string;
     /**
+     * Renewal settings for the reservation
+     */
+    RenewalSettings?: RenewalSettings;
+    /**
      * Unique reservation ID, e.g. '1234567'
      */
     ReservationId?: __string;
@@ -1950,6 +1975,10 @@ one destination per packager.
      * The log level being written to CloudWatch Logs.
      */
     LogLevel?: LogLevel;
+    /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
     /**
      * The name of the channel. (user-mutable)
      */
@@ -2354,6 +2383,10 @@ during input switch actions. Presently, this functionality only works with MP4_F
      */
     Region?: __string;
     /**
+     * Renewal settings for the reservation
+     */
+    RenewalSettings?: RenewalSettings;
+    /**
      * Unique reservation ID, e.g. '1234567'
      */
     ReservationId?: __string;
@@ -2397,7 +2430,7 @@ during input switch actions. Presently, this functionality only works with MP4_F
     ScheduleActions?: __listOfScheduleAction;
   }
   export type DeviceSettingsSyncState = "SYNCED"|"SYNCING"|string;
-  export type DeviceUpdateStatus = "UP_TO_DATE"|"NOT_UP_TO_DATE"|string;
+  export type DeviceUpdateStatus = "UP_TO_DATE"|"NOT_UP_TO_DATE"|"UPDATING"|string;
   export interface DvbNitSettings {
     /**
      * The numeric value placed in the Network Information Table (NIT).
@@ -2623,7 +2656,7 @@ provide the language to consider when translating the image-based source to text
   export type Eac3SurroundMode = "DISABLED"|"ENABLED"|"NOT_INDICATED"|string;
   export interface EbuTtDDestinationSettings {
     /**
-     * Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. Complete this field if you want to include the name of the copyright holder in the copyright metadata tag in the TTML
+     * Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.
      */
     CopyrightHolder?: __stringMax1000;
     /**
@@ -3996,7 +4029,7 @@ to.
     /**
      * Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live".
      */
-    Uri: __string;
+    Uri: __stringMax2048;
     /**
      * Documentation update needed
      */
@@ -4728,6 +4761,49 @@ When a segmentation style of "maintainCadence" is selected and a segment is trun
     VideoPid?: __string;
   }
   export type M3u8TimedMetadataBehavior = "NO_PASSTHROUGH"|"PASSTHROUGH"|string;
+  export interface MaintenanceCreateSettings {
+    /**
+     * Choose one day of the week for maintenance. The chosen day is used for all future maintenance windows.
+     */
+    MaintenanceDay?: MaintenanceDay;
+    /**
+     * Choose the hour that maintenance will start. The chosen time is used for all future maintenance windows.
+     */
+    MaintenanceStartTime?: __stringPattern010920300;
+  }
+  export type MaintenanceDay = "MONDAY"|"TUESDAY"|"WEDNESDAY"|"THURSDAY"|"FRIDAY"|"SATURDAY"|"SUNDAY"|string;
+  export interface MaintenanceStatus {
+    /**
+     * The currently selected maintenance day.
+     */
+    MaintenanceDay?: MaintenanceDay;
+    /**
+     * Maintenance is required by the displayed date and time. Date and time is in ISO.
+     */
+    MaintenanceDeadline?: __string;
+    /**
+     * The currently scheduled maintenance date and time. Date and time is in ISO.
+     */
+    MaintenanceScheduledDate?: __string;
+    /**
+     * The currently selected maintenance start time. Time is in UTC.
+     */
+    MaintenanceStartTime?: __string;
+  }
+  export interface MaintenanceUpdateSettings {
+    /**
+     * Choose one day of the week for maintenance. The chosen day is used for all future maintenance windows.
+     */
+    MaintenanceDay?: MaintenanceDay;
+    /**
+     * Choose a specific date for maintenance to occur. The chosen date is used for the next maintenance window only.
+     */
+    MaintenanceScheduledDate?: __string;
+    /**
+     * Choose the hour that maintenance will start. The chosen time is used for all future maintenance windows.
+     */
+    MaintenanceStartTime?: __stringPattern010920300;
+  }
   export type MaxResults = number;
   export interface MediaConnectFlow {
     /**
@@ -5412,7 +5488,7 @@ When this field is defined, ConstantBitrate must be undefined.
   }
   export interface OutputGroup {
     /**
-     * Custom output group name optionally defined by the user.  Only letters, numbers, and the underscore character allowed; only 32 characters allowed.
+     * Custom output group name optionally defined by the user.
      */
     Name?: __stringMax32;
     /**
@@ -5493,6 +5569,10 @@ When this field is defined, ConstantBitrate must be undefined.
      */
     OfferingId: __string;
     /**
+     * Renewal settings for the reservation
+     */
+    RenewalSettings?: RenewalSettings;
+    /**
      * Unique request ID to be specified. This is needed to prevent retries from creating multiple resources.
      */
     RequestId?: __string;
@@ -5536,6 +5616,16 @@ When this field is defined, ConstantBitrate must be undefined.
 Valid values: 1, 2, 4, 6, 8
      */
     ChannelsOut?: __integerMin1Max8;
+  }
+  export interface RenewalSettings {
+    /**
+     * Automatic renewal status for the reservation
+     */
+    AutomaticRenewal?: ReservationAutomaticRenewal;
+    /**
+     * Count for the reservation renewal
+     */
+    RenewalCount?: __integerMin1;
   }
   export interface Reservation {
     /**
@@ -5587,6 +5677,10 @@ Valid values: 1, 2, 4, 6, 8
      */
     Region?: __string;
     /**
+     * Renewal settings for the reservation
+     */
+    RenewalSettings?: RenewalSettings;
+    /**
      * Unique reservation ID, e.g. '1234567'
      */
     ReservationId?: __string;
@@ -5611,6 +5705,7 @@ Valid values: 1, 2, 4, 6, 8
      */
     UsagePrice?: __double;
   }
+  export type ReservationAutomaticRenewal = "DISABLED"|"ENABLED"|"UNAVAILABLE"|string;
   export type ReservationCodec = "MPEG2"|"AVC"|"HEVC"|"AUDIO"|"LINK"|string;
   export type ReservationMaximumBitrate = "MAX_10_MBPS"|"MAX_20_MBPS"|"MAX_50_MBPS"|string;
   export type ReservationMaximumFramerate = "MAX_30_FPS"|"MAX_60_FPS"|string;
@@ -6021,6 +6116,10 @@ one destination per packager.
      */
     LogLevel?: LogLevel;
     /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
+    /**
      * The name of the channel. (user-mutable)
      */
     Name?: __string;
@@ -6210,6 +6309,10 @@ one destination per packager.
      */
     LogLevel?: LogLevel;
     /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceStatus;
+    /**
      * The name of the channel. (user-mutable)
      */
     Name?: __string;
@@ -6374,7 +6477,7 @@ one destination per packager.
   }
   export interface TtmlDestinationSettings {
     /**
-     * When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
+     * This field is not currently supported and will not affect the output styling. Leave the default value.
      */
     StyleControl?: TtmlDestinationStyleControl;
   }
@@ -6455,6 +6558,10 @@ one destination per packager.
      * The log level to write to CloudWatch Logs.
      */
     LogLevel?: LogLevel;
+    /**
+     * Maintenance settings for this channel.
+     */
+    Maintenance?: MaintenanceUpdateSettings;
     /**
      * The name of the channel.
      */
@@ -6640,6 +6747,10 @@ Only specify sources for PULL type Inputs. Leave Destinations empty.
      * Name of the reservation
      */
     Name?: __string;
+    /**
+     * Renewal settings for the reservation
+     */
+    RenewalSettings?: RenewalSettings;
     /**
      * Unique reservation ID, e.g. '1234567'
      */
@@ -6919,6 +7030,8 @@ If STANDARD channel, subnet IDs must be mapped to two unique availability zones 
   export type __longMin0Max86400000 = number;
   export type __string = string;
   export type __stringMax1000 = string;
+  export type __stringMax2048 = string;
+  export type __stringMax255 = string;
   export type __stringMax256 = string;
   export type __stringMax32 = string;
   export type __stringMin1 = string;
@@ -6931,6 +7044,7 @@ If STANDARD channel, subnet IDs must be mapped to two unique availability zones 
   export type __stringMin34Max34 = string;
   export type __stringMin3Max3 = string;
   export type __stringMin6Max6 = string;
+  export type __stringPattern010920300 = string;
   export type InputDeviceThumbnail = Buffer|Uint8Array|Blob|string|Readable;
   export type AcceptHeader = "image/jpeg"|string;
   export type ContentType = "image/jpeg"|string;
