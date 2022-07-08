@@ -212,38 +212,7 @@ Whether you just started your first entry-level job, run the entire company, or 
             </div>
           </div>
         </Block>
-        <Block title="Blog" theme="block--light-yellow">
-          <div className="blog">
-            <a href="#empty" className="blog-featured">
-              <div className="blog-featured-image">
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </div>
-              <div className="blog-featured-content">
-                <h3 className="blog-featured-title">Featured Blog Title</h3>
-                <div className="blog-featured-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  fringilla vestibulum sodales. Pellentesque lobortis diam elit,
-                  vitae finibus dui finibus a. Praesent bibendum libero at nisl
-                  aliquam, eget blandit nunc consequat.{` `}
-                </div>
-              </div>
-            </a>
-            <div className="blog-posts">
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
-              <a href="#empty" className="blog-post">
-                <span>Blog Title</span>
-                <img src="/img/blog-image.svg" alt="Blog Title" />
-              </a>
-            </div>
-          </div>
-        </Block>
+
 		<Block title="The Authors">
           <div className="author">
             <div className="author-image">
@@ -301,7 +270,7 @@ Whether you just started your first entry-level job, run the entire company, or 
           </div>
           <div className="author">
             <div className="author-image">
-              <img src="/img/author-nick.svg" role="presentation" alt="" />
+              <img src="/img/author-nick.jpeg" role="presentation" alt="" />
               <div className="author-social">
                 <div className="author-social-link">
                   <a href="https://twitter.com/nicksinai">
@@ -323,7 +292,7 @@ Whether you just started your first entry-level job, run the entire company, or 
             <div className="author-content">
               <h3 className="author-name">Nick Sinai</h3>
               <div className="author-bio">
-                Nick Sinai is a venture capitalist, adjunct Harvard faculty, and a former senior White House official in the Obama Administration. Nick writes about technology and innovation in government—including co-authoring a Harvard Business School case about the U.S. Digital Service. He’s been quoted in the Economist and the WSJ, and testified in front of Congress. Recently, Nick co-founded the U.S. Digital Corps, a new two-year federal fellowship for early-career technologists, launched in the summer of 2021.
+                Nick Sinai is a venture capitalist, adjunct Harvard faculty, and a former senior White House official in the Obama Administration. As a Senior Advisor at Insight Partners, Nick serves on the board of Rebellion Defense, Hawkeye360, LeoLabs, and Shift5. He writes and teaches about technology in government, and serves as a commissioner on the Atlantic Council's Commission on Remaking the US Defense Innovation System. He’s been quoted in the Economist and the WSJ, and testified in front of Congress. Recently, Nick co-founded the U.S. Digital Corps, a new two-year federal fellowship for early-career technologists, launched in the summer of 2021.
               </div>
               <div className="author-read">
                 <a href="https://en.wikipedia.org/wiki/Nick_Sinai">
@@ -361,6 +330,7 @@ Whether you just started your first entry-level job, run the entire company, or 
               </a>
               .
             </p>
+			<!--
             <p>
               If you’d like, stay up to date with Hack Your Bureaucracy
               releases, events, and general goings-on by signing up for our
@@ -374,6 +344,7 @@ Whether you just started your first entry-level job, run the entire company, or 
                 <button type="submit">Sign me Up</button>
               </div>
             </form>
+			-->
           </div>
         </Block>
         <footer className="footer">
