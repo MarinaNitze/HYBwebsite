@@ -330,21 +330,7 @@ Whether you just started your first entry-level job, run the entire company, or 
               </a>
               .
             </p>
-			<!--
-            <p>
-              If you’d like, stay up to date with Hack Your Bureaucracy
-              releases, events, and general goings-on by signing up for our
-              email newsletter.
-            </p>
-            <form>
-              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-              <label htmlFor="email">Your email</label>
-              <div className="contact-input">
-                <input type="email" name="email" id="email" />
-                <button type="submit">Sign me Up</button>
-              </div>
-            </form>
-			-->
+
           </div>
         </Block>
         <footer className="footer">
