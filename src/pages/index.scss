@@ -198,12 +198,16 @@ body {
       margin-right: 1rem;
       margin-bottom: 1rem;
 
-      @media screen and (min-width: 900px) {
-        margin-bottom: 0;
-      }
-
       img {
         height: 56px;
+      }
+    }
+
+    a:last-child {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      img {
+        height: 17px
       }
     }
 
@@ -216,13 +220,15 @@ body {
       width: 100%;
       padding: 0 1rem;
       box-sizing: border-box;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
 
       @media screen and (min-width: 900px) {
         width: 30%;
       }
 
       img {
-        height: 17px;
+        height: 42px;
       }
     }
   }
