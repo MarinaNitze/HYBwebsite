@@ -46,6 +46,16 @@ If you prefer you can clone this repository and run the following commands insid
 
 To view the project you can open `http://localhost:8000`.
 
+## Docker Setup
+
+This allows you to run a dev and build environment from within a Docker container. Hopefully helps with the "it works[/doesn't work] on my machine problems" by creating a consistent environment. This requires installing [Docker for Desktop](https://www.docker.com/products/docker-desktop/) and having it running.
+
+1. Clone this repo and move into it via a terminal: `git clone <url>` and `cd <file path to base of the repo>`
+1. Launch the container and map files/port: `docker run -it --rm -v $PWD:/site -p 8000:8000 -w /site node:16.11 bash`
+1. Install dependencies: `yarn`
+1. Start a dev server: `yarn start --host 0.0.0.0`
+
+
 ## 🤝 Contributing
 
 1. Fork this repository;
