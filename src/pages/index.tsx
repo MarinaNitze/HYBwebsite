@@ -108,7 +108,7 @@ Whether you just started your first entry-level job, run the entire company, or 
                 <img src="/img/indiebound.png" alt="Indiebound" />
               </a>
               <a href="https://bit.ly/3NNLSFT">
-                <img src="/img/barnes.png" alt="Barnes & Noble"/>
+                <img src="/img/barnes.png" alt="Barnes & Noble" />
               </a>
             </div>
           </div>
