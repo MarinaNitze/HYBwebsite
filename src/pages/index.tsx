@@ -213,6 +213,22 @@ Whether you just started your first entry-level job, run the entire company, or 
           </div>
         </Block>
 
+        <Block title="Blog" theme="block--light-yellow">
+          <div className="blog">
+            <a href="https://medium.com/hack-your-bureaucracy/introducing-hack-your-bureaucracy-89b9b65cdd34" className="blog-featured">
+              <div className="blog-featured-image">
+                <img src="https://miro.medium.com/max/1400/1*wNSRCYw8avrJzFuPJG1Z1g.jpeg" alt="Blog Title" />
+              </div>
+              <div className="blog-featured-content">
+                <h3 className="blog-featured-title">Introducing: Hack Your Bureaucracy</h3>
+                <div className="blog-featured-description">
+                  We’re excited to announce our new book, Hack Your Bureaucracy: Get Things Done No Matter Your Role On Any Team. It’s available for pre-order now! Click here to read more.{` `}
+                </div>
+              </div>
+            </a>
+          </div>
+        </Block>
+		
 		<Block title="The Authors">
           <div className="author">
             <div className="author-image">
