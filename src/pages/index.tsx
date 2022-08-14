@@ -217,12 +217,34 @@ Whether you just started your first entry-level job, run the entire company, or 
           <div className="blog">
             <a href="https://medium.com/hack-your-bureaucracy/introducing-hack-your-bureaucracy-89b9b65cdd34" className="blog-featured">
               <div className="blog-featured-image">
-                <img src="https://miro.medium.com/max/1400/1*wNSRCYw8avrJzFuPJG1Z1g.jpeg" alt="Blog Title" />
+                <img src="https://miro.medium.com/max/1400/1*wNSRCYw8avrJzFuPJG1Z1g.jpeg" alt="Introducing: Hack Your Bureaucracy" />
               </div>
               <div className="blog-featured-content">
                 <h3 className="blog-featured-title">Introducing: Hack Your Bureaucracy</h3>
                 <div className="blog-featured-description">
                   We’re excited to announce our new book, Hack Your Bureaucracy: Get Things Done No Matter Your Role On Any Team. It’s available for pre-order now! Click here to read more.{` `}
+                </div>
+              </div>
+            </a>
+            <a href="https://medium.com/hack-your-bureaucracy/write-it-down-how-a-written-memo-can-help-you-gain-support-for-your-ideas-81de0a06711f" className="blog-featured">
+              <div className="blog-featured-image">
+                <img src="/img/write-it-down.jpg" alt="Write It Down: How a Written Memo Can Help You Gain Support For Your Ideas" />
+              </div>
+              <div className="blog-featured-content">
+                <h3 className="blog-featured-title">Write It Down: How a Written Memo Can Help You Gain Support For Your Ideas</h3>
+                <div className="blog-featured-description">
+                  How can you get your coworkers to support your ideas at work? It sounds boring -- but trust us: write it down!{` `}
+                </div>
+              </div>
+            </a>
+            <a href="https://medium.com/hack-your-bureaucracy/bureaucracy-hacking-tactics-to-create-a-parent-nation-552877d52bae" className="blog-featured">
+              <div className="blog-featured-image">
+                <img src="/img/parent-nation.jpeg" alt="Bureaucracy Hacking Tactics to Create a Parent Nation" />
+              </div>
+              <div className="blog-featured-content">
+                <h3 className="blog-featured-title">Bureaucracy Hacking Tactics to Create a Parent Nation</h3>
+                <div className="blog-featured-description">
+                  Our ideas for making the ideas in Dana Suskind's new book, <em>Parent Nation</em>, a reality.{` `}
                 </div>
               </div>
             </a>
