@@ -248,6 +248,17 @@ Whether you just started your first entry-level job, run the entire company, or 
                 </div>
               </div>
             </a>
+            <a href="https://medium.com/hack-your-bureaucracy/how-thomas-jeffersons-cousin-used-this-tactic-to-create-the-u-s-supreme-court-out-of-spite-c3947072a0ec" className="blog-featured">
+              <div className="blog-featured-image">
+                <img src="/img/supreme-court.png" alt="How Thomas Jefferson’s Cousin Used This Tactic to Create the U.S. Supreme Court Out of Spite" />
+              </div>
+              <div className="blog-featured-content">
+                <h3 className="blog-featured-title">How Thomas Jefferson’s Cousin Used This Tactic to Create the U.S. Supreme Court Out of Spite</h3>
+                <div className="blog-featured-description">
+                  John Marshall found the perfect way to screw over his cousin, Thomas Jefferson: by creating the modern-day U.S. Supreme Court.{` `}
+                </div>
+              </div>
+            </a>
           </div>
         </Block>
 		
