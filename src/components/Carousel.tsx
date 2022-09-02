@@ -8,7 +8,7 @@ export default function Carousel() {
       className="carousel" // default ''
       elementType="div" // default 'div'
       options={{
-        prevNextButtons: false,
+        prevNextButtons: true,
       }} // takes flickity options {}
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false

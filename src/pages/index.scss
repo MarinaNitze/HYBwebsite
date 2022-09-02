@@ -241,6 +241,30 @@ body {
 }
 
 .carousel {
+  .flickity-button {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    svg path {
+      fill: #ffffff;
+    }
+  }
+
+  .flickity-button:disabled {
+    display: none;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -10px;
+  }
+  
+  .flickity-prev-next-button.next {
+    right: -10px;
+  }
+
   .flickity-page-dots {
     bottom: 2rem !important;
   
@@ -261,7 +285,7 @@ body {
 .quote {
   max-width: 960px;
   margin: 0 auto;
-  padding: 3rem 1rem 7rem;
+  padding: 3rem 3rem 7rem;
 
   &-wrapper {
     @media screen and (min-width: 900px) {
