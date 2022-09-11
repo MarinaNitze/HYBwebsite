@@ -101,20 +101,20 @@ export default function Home() {
               <div className="hero-bar-text">
                 <strong>Preorder today on</strong>
                 <span>
-                  <a href="https://amzn.to/3yOJTx0">
+                  <a href="https://amzn.to/3yOJTx0" onclick="window.lintrk('track', { conversion_id: 9590466 });">
                     Amazon
                   </a>
                   {`, `}
-                  <a href="https://bit.ly/3yQT681">
+                  <a href="https://bit.ly/3yQT681" onclick="window.lintrk('track', { conversion_id: 9590466 });">
                     Indiebound
                   </a>
                   {`, `}
-                  <a href="https://bit.ly/3RozuiW">
+                  <a href="https://bit.ly/3RozuiW" onclick="window.lintrk('track', { conversion_id: 9590466 });">
                     Bookshop.org
                   </a>
                   {`, `}
                   or{` `}
-                  <a href="https://bit.ly/3NNLSFT">
+                  <a href="https://bit.ly/3NNLSFT" onclick="window.lintrk('track', { conversion_id: 9590466 });">
                     Barnes &amp; Noble
                   </a>
                 </span>
