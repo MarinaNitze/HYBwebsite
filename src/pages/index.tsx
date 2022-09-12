@@ -99,7 +99,7 @@ export default function Home() {
                 <img src="/img/logo.svg" alt="Hack Your Bureaucracy" />
               </div>
               <div className="hero-bar-text">
-                <strong>Preorder today on</strong>
+                <strong>Order today on</strong>
                 <span>
                   <a href="https://amzn.to/3yOJTx0" onclick="window.lintrk('track', { conversion_id: 9590466 });">
                     Amazon
@@ -140,8 +140,8 @@ Whether you just started your first entry-level job, run the entire company, or 
 <p>Now, they bring their years of experience to you, teaching you strategies anyone can use to improve your organization through their own stories and those of fellow bureaucracy hackers. Regardless of your industry, role, or team, Hack Your Bureaucracy shows how to get started, take initiative on your own, and transform your ideas into impact.</p>
               
             </div>
-            <div className="intro-date">AVAILABLE SEPTEMBER 13, 2022!</div>
-            <div className="intro-preorder">Preorder today from</div>
+            <div className="intro-date">AVAILABLE EVERYWHERE!</div>
+            <div className="intro-preorder">Order today from</div>
             <div className="intro-links">
               <a href="https://amzn.to/3yOJTx0">
                 <img src="/img/amazon.png" alt="Amazon" />
