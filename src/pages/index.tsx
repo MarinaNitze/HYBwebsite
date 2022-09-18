@@ -28,8 +28,8 @@ export default function Home() {
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />
       <meta property="og:title" content="Hack Your Bureaucracy on sale now" />
-      <meta property="og:description" content="Hack Your Bureaucracy on sale now" />
-      <meta property="og:image" content="/img/book.png" />
+      <meta property="og:description" content="Over 55 tactics for making change happen in environments of all sizes and complexities." />
+      <meta property="og:image" content="https://www.hackyourbureaucracy.com/img/book.png" />
       <meta property="og:url" content="https://www.hackyourbureaucracy.com" />
       <script type="application/ld+json">
         {`{
