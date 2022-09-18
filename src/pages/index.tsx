@@ -41,7 +41,7 @@ export default function Home() {
             "author": "http://www.example.com/author.html",
             "bookFormat": "http://schema.org/EBook",
             "datePublished": "2022-09-13",
-            "image": "https://www.hackyourbureaucracy.com/img/header.svg",
+            "image": "https://www.hackyourbureaucracy.com/img/onsale_banner.jpg",
             "inLanguage": "English",
             "isbn": "9780306827754",
             "name": "Hack Your Bureaucracy",
