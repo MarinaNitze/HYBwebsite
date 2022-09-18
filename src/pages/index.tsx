@@ -30,7 +30,7 @@ export default function Home() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Hack Your Bureaucracy on sale now" />
       <meta property="og:description" content="Over 55 tactics for making change happen in environments of all sizes and complexities." />
-      <meta property="og:image" content="https://www.hackyourbureaucracy.com/img/onsale_banner.jpg" />
+      <meta property="og:image" content="https://www.hackyourbureaucracy.com/img/onsale2.jpg" />
       <meta property="og:url" content="https://www.hackyourbureaucracy.com" />
       <script type="application/ld+json">
         {`{
@@ -41,7 +41,7 @@ export default function Home() {
             "author": "http://www.example.com/author.html",
             "bookFormat": "http://schema.org/EBook",
             "datePublished": "2022-09-13",
-            "image": "https://www.hackyourbureaucracy.com/img/onsale_banner.jpg",
+            "image": "https://www.hackyourbureaucracy.com/img/onsale2.jpg",
             "inLanguage": "English",
             "isbn": "9780306827754",
             "name": "Hack Your Bureaucracy",
