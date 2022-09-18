@@ -27,6 +27,10 @@ export default function Home() {
       <meta charSet="utf-8" />
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />
+      <meta property="og:title" content="Hack Your Bureaucracy on sale now" />
+      <meta property="og:description" content="Hack Your Bureaucracy on sale now" />
+      <meta property="og:image" content="/img/book.png" />
+      <meta property="og:url" content="https://www.hackyourbureaucracy.com" />
       <script type="application/ld+json">
         {`{
           "@context": "https://schema.org",
