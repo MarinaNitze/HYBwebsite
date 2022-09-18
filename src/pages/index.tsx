@@ -27,6 +27,7 @@ export default function Home() {
       <meta charSet="utf-8" />
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content="Hack Your Bureaucracy on sale now" />
       <meta property="og:description" content="Over 55 tactics for making change happen in environments of all sizes and complexities." />
       <meta property="og:image" content="https://www.hackyourbureaucracy.com/img/book.png" />
