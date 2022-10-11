@@ -128,7 +128,7 @@ export default function Carousel() {
         <div className="quote">
           <div className="quote-wrapper">
             <div className="quote-name">Lauren Knausenberger</div>
-            <div className="quote-position">CIO, U.S. Air Force</div>
+            <div className="quote-position">&nbsp;</div>
             <div className="quote-content">
               "Nick and Marina are masters of the dark arts of bureaucracy hacking.  Hack Your Bureaucracy is full of dozens of tactics that I've used, and many more that I plan to!  Anyone who wants to make change at scale -- in the U.S. Air Force, or in any organization of significance -- should read this book."
             </div>
